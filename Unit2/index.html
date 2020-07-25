@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <title>Unit2</title>
   </head>
   <body>
@@ -259,7 +260,7 @@
             </li>
             <li class="price-offer-point">Aperiam nulla ea neque.</li>
           </ol>
-          <button class="price-offer-buy">BUY</button>
+          <button class="price-offer-buy">buy</button>
         </section>
         <section class="price-offer offer-2">
           <h3 class="price-offer-title">Standart</h3>
@@ -282,7 +283,7 @@
             </li>
             <li class="price-offer-point">Aperiam nulla ea neque.</li>
           </ol>
-          <button class="price-offer-buy">BUY</button>
+          <button class="price-offer-buy">buy</button>
         </section>
         <section class="price-offer offer-3">
           <h3 class="price-offer-title">Standart</h3>
@@ -313,10 +314,64 @@
             </li>
             <li class="price-offer-point">Aperiam nulla ea neque.</li>
           </ol>
-          <button class="price-offer-buy">BUY</button>
+          <button class="price-offer-buy">buy</button>
         </section>
       </div>
     </main>
+    <footer class="footer">
+      <section class="contacts">
+        <h2 class="contacts-title">Contacts</h2>
+        <form action="#" class="contacts-form">
+          <div class="contacts-form-wrap">
+            <input
+              class="contacts-form-name"
+              type="text"
+              placeholder="Your name:"
+            />
+            <input
+              class="contacts-form-mail"
+              type="email"
+              placeholder="Your email:"
+            />
+            <textarea
+              class="contacts-form-text"
+              name="contacts-form-text"
+              id="contacts-form-text"
+              cols="30"
+              rows="6"
+              placeholder="Your message:"
+            ></textarea>
+            <input class="contacts-form-button" type="button" value="send" />
+          </div>
+        </form>
+        <div class="ourContacts">
+          <a class="sign sign-1" href="#">here_your_login_skype</a>
+          <a class="sign sign-2" href="#">279679659</a>
+          <a class="sign sign-3" href="#">psdhtmlcss@mail.ru</a>
+          <a class="sign sign-4" href="#">80 00 4568 55 55</a>
+          <div class="ourContacts-icons">
+            <a href="#">
+              <div class="icon"><i class="fab fa-twitter"></i></div>
+            </a>
+            <a href="#">
+              <div class="icon"><i class="fab fa-facebook-f"></i></div>
+            </a>
+            <a href="#">
+              <div class="icon"><i class="fab fa-linkedin-in"></i></div>
+            </a>
+            <a href="#">
+              <div class="icon"><i class="fab fa-google"></i></div>
+            </a>
+            <a href="#">
+              <div class="icon"><i class="fab fa-youtube"></i></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <span>Copyright &copy; 2014 Product name · PSD HTML CSS</span>
+      </section>
+    </footer>
     <script>
       buttonPlay.onclick = function () {
         var sectionVideo = document.querySelector("div.video-wrap");

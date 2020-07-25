@@ -355,7 +355,7 @@ details[open] summary:before {
 }
 
 .price {
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,6 +385,7 @@ details[open] summary:before {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  margin: 0 0 10px 0;
 }
 
 .price-offer-title {
@@ -420,6 +421,245 @@ details[open] summary:before {
   line-height: 1;
   text-align: center;
   color: #445161;
+  text-transform: uppercase;
+}
+
+.contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 40px;
+  padding: 50px 50px 60px 50px;
+  background-color: #445161;
+  border: 1px solid #000;
+}
+
+.contacts-title {
+  margin: 0 0 30px 0;
+  grid-column: span 10;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.contacts-form {
+  grid-column: span 6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-form-wrap {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-form-name {
+  width: 500px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #445162;
+  padding: 0 0 0 10px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+}
+
+.contacts-form-mail {
+  width: 500px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #445162;
+  padding: 0 0 0 10px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+}
+
+.contacts-form-text {
+  width: 500px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #445162;
+  padding: 0 0 0 10px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+}
+
+.contacts-form-button {
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  -webkit-box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  width: 140px;
+  line-height: 40px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #445162;
+  padding: 0 0 0 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+}
+
+.contacts-form-button:hover {
+  background-color: #cccccc;
+}
+
+.contacts-form-button:active {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  top: 2px;
+}
+
+.ourContacts {
+  grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ourContacts .sign {
+  margin: 0 0 25px 0;
+  padding: 5px 0 0 30px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+
+.ourContacts .sign:hover {
+  color: #bcbcbc;
+}
+
+.ourContacts .sign-1:before {
+  content: "";
+  margin: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/skype.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ourContacts .sign-2:before {
+  content: "";
+  margin: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icq.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ourContacts .sign-3:before {
+  content: "";
+  margin: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/email.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ourContacts .sign-4:before {
+  content: "";
+  margin: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ourContacts .ourContacts-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 240px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ourContacts .ourContacts-icons .icon {
+  font-weight: 900;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #445162;
+}
+
+.ourContacts .ourContacts-icons .icon:hover {
+  background-color: #bcbcbc;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #445162;
+  border: 1px solid #445162;
+  padding: 10px 0 5px 0;
 }
 
 @media screen and (max-width: 1050px) {
@@ -458,6 +698,17 @@ details[open] summary:before {
   }
   .review-fig {
     grid-column: span 12;
+  }
+  .contacts-form {
+    grid-column: span 10;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .ourContacts {
+    grid-column: span 10;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 50px;
   }
 }
 
