@@ -387,6 +387,7 @@ details[open] summary:before
 .contacts-form-mail
     @include format_input(40px, 500px, 20px, 10px)
 .contacts-form-text
+    resize: none
     @include format_input(24px, 500px, 20px, 10px)
 .contacts-form-button
     text-transform: uppercase
@@ -400,7 +401,9 @@ details[open] summary:before
 .contacts-form-button:active
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75)
     top: 2px
-
+input:focus,
+textarea:focus
+    background-color: #cdcdcd
 .ourContacts
     grid-column: span 4   
     display: flex
@@ -428,7 +431,7 @@ details[open] summary:before
         background-image: url($path)
         background-repeat: no-repeat
         background-position: center
-        
+
     .sign-1:before
         @include sign-img('../img/skype.png')
     .sign-2:before
@@ -460,8 +463,15 @@ details[open] summary:before
     color: #445162
     border: 1px solid #445162
     padding: 10px 0 5px 0
-
-
+.copyright a
+    font-size: 12px
+    line-height: 2
+    letter-spacing: 0.3px
+    text-align: center
+    color: #445162
+    text-decoration: none
+.copyright a:hover
+    color: #000000
 
 @media screen and ( max-width: 1050px )
     .header-content

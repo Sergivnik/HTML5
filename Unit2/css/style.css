@@ -501,6 +501,7 @@ details[open] summary:before {
 }
 
 .contacts-form-text {
+  resize: none;
   width: 500px;
   line-height: 24px;
   margin-bottom: 20px;
@@ -544,6 +545,11 @@ details[open] summary:before {
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   top: 2px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #cdcdcd;
 }
 
 .ourContacts {
@@ -660,6 +666,19 @@ details[open] summary:before {
   color: #445162;
   border: 1px solid #445162;
   padding: 10px 0 5px 0;
+}
+
+.copyright a {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #445162;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #000000;
 }
 
 @media screen and (max-width: 1050px) {

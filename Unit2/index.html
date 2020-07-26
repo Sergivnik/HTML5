@@ -321,7 +321,7 @@
     <footer class="footer">
       <section class="contacts">
         <h2 class="contacts-title">Contacts</h2>
-        <form action="#" class="contacts-form">
+        <form action="#" method="POST" class="contacts-form">
           <div class="contacts-form-wrap">
             <input
               class="contacts-form-name"
@@ -332,6 +332,7 @@
               class="contacts-form-mail"
               type="email"
               placeholder="Your email:"
+              required
             />
             <textarea
               class="contacts-form-text"
@@ -341,7 +342,7 @@
               rows="6"
               placeholder="Your message:"
             ></textarea>
-            <input class="contacts-form-button" type="button" value="send" />
+            <input class="contacts-form-button" type="submit" value="send" />
           </div>
         </form>
         <div class="ourContacts">
@@ -369,7 +370,10 @@
         </div>
       </section>
       <section class="copyright">
-        <span>Copyright &copy; 2014 Product name · PSD HTML CSS</span>
+        <p>
+          Copyright &copy; 2014 Product name · <a href="#">psd </a
+          ><a href="#">html </a><a href="#">css </a>
+        </p>
       </section>
     </footer>
     <script>
