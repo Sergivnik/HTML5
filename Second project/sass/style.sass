@@ -1,0 +1,91 @@
+$width: 1920px
+body
+    max-width: $width
+    margin: 0
+.header
+    background-color: #555556
+    background-image: url('../img/landscape-1.jpg')
+.header-top
+    display: grid
+    grid-template-columns: repeat(24,1fr)
+.header-top-logo
+    grid-column: span 9
+    margin: 40px 0 0 375px
+    .header-top-logo-a
+        font-size: 34px
+        font-family: "Raleway"
+        color: #ffffff
+        line-height: 1.2
+        text-align: right
+        text-decoration: none
+        span
+            vertical-align: 15px
+            margin-left: -5px
+    .logo
+        fill: #ffffff
+.header-top-logo-a:hover
+    color: #c7b299
+    .logo
+        fill: #c7b299
+.header-top-menu
+    grid-column: span 9
+    margin: 0 0 0 25px
+.header-top-menu-list
+    display: flex
+    list-style: none
+    margin: 0
+    a 
+        text-decoration: none
+        color: #ffffff
+        margin: 60px 30px 0 0
+        font-size: 14px
+        line-height: 1.2
+    a:hover 
+        color: #c7b299
+.header-top-twoicon
+    grid-column: span 6
+    display: flex
+    margin: 57px 0 0 45px 
+    .case, .search
+        fill: #ffffff
+    .search
+        margin-left: 30px
+    .case:hover, .search:hover
+        fill: #c7b299
+.header-carousel
+    display: grid
+    grid-template-columns: repeat(24,1fr)
+    margin: 280px 0 0 0
+    .arrow-left
+        grid-column: span 4
+        justify-self: center
+        fill: #a3a2a0
+        padding: 90px 0 0 0
+    .header-carousel-content
+        grid-column: span 16
+        justify-self: center
+        color: #ffffff
+        text-align: center
+        span
+            font-size: 36px
+            font-family: "Raleway"
+            line-height: 1.2
+        h1
+            font-size: 50px
+            font-family: "Raleway"
+            line-height: 1.2
+        p 
+            font-size: 16px
+            font-family: "Montserrat"
+            line-height: 1.5
+        button
+            text-transform: uppercase
+            width: 170px
+            height: 50px
+            background-color: #998675
+
+    .arrow-right
+        grid-column: span 4
+        justify-self: center
+        fill: #a3a2a0
+        padding: 90px 0 0 0

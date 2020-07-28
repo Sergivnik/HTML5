@@ -1,0 +1,150 @@
+body {
+  max-width: 1920px;
+  margin: 0;
+}
+
+.header {
+  background-color: #555556;
+  background-image: url("../img/landscape-1.jpg");
+}
+
+.header-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[24];
+      grid-template-columns: repeat(24, 1fr);
+}
+
+.header-top-logo {
+  grid-column: span 9;
+  margin: 40px 0 0 375px;
+}
+
+.header-top-logo .header-top-logo-a {
+  font-size: 34px;
+  font-family: "Raleway";
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: right;
+  text-decoration: none;
+}
+
+.header-top-logo .header-top-logo-a span {
+  vertical-align: 15px;
+  margin-left: -5px;
+}
+
+.header-top-logo .logo {
+  fill: #ffffff;
+}
+
+.header-top-logo-a:hover {
+  color: #c7b299;
+}
+
+.header-top-logo-a:hover .logo {
+  fill: #c7b299;
+}
+
+.header-top-menu {
+  grid-column: span 9;
+  margin: 0 0 0 25px;
+}
+
+.header-top-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.header-top-menu-list a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 60px 30px 0 0;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.header-top-menu-list a:hover {
+  color: #c7b299;
+}
+
+.header-top-twoicon {
+  grid-column: span 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 57px 0 0 45px;
+}
+
+.header-top-twoicon .case, .header-top-twoicon .search {
+  fill: #ffffff;
+}
+
+.header-top-twoicon .search {
+  margin-left: 30px;
+}
+
+.header-top-twoicon .case:hover, .header-top-twoicon .search:hover {
+  fill: #c7b299;
+}
+
+.header-carousel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[24];
+      grid-template-columns: repeat(24, 1fr);
+  margin: 280px 0 0 0;
+}
+
+.header-carousel .arrow-left {
+  grid-column: span 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  fill: #a3a2a0;
+  padding: 90px 0 0 0;
+}
+
+.header-carousel .header-carousel-content {
+  grid-column: span 16;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-carousel .header-carousel-content span {
+  font-size: 36px;
+  font-family: "Raleway";
+  line-height: 1.2;
+}
+
+.header-carousel .header-carousel-content h1 {
+  font-size: 50px;
+  font-family: "Raleway";
+  line-height: 1.2;
+}
+
+.header-carousel .header-carousel-content p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 1.5;
+}
+
+.header-carousel .header-carousel-content button {
+  text-transform: uppercase;
+  width: 170px;
+  height: 50px;
+  background-color: #998675;
+}
+
+.header-carousel .arrow-right {
+  grid-column: span 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  fill: #a3a2a0;
+  padding: 90px 0 0 0;
+}
+/*# sourceMappingURL=style.css.map */
