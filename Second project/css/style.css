@@ -42,13 +42,15 @@
 
 body {
   max-width: 1920px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .header {
   background-color: #555556;
   background-image: url("../img/landscape-1.jpg");
   background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
 }
 
 .header-top {
@@ -155,6 +157,10 @@ body {
   padding: 102px 0px 0 20px;
 }
 
+.header-carousel .arrow-left:hover {
+  fill: #c7b299;
+}
+
 .header-carousel .header-carousel-content {
   grid-column: span 16;
   -ms-grid-column-align: center;
@@ -223,6 +229,10 @@ body {
   padding: 102px 0 0 13px;
 }
 
+.header-carousel .arrow-right:hover {
+  fill: #c7b299;
+}
+
 .header-paggination {
   margin: 232px 0 0 19px;
   display: -webkit-box;
@@ -251,6 +261,8 @@ body {
 .header-paggination .header-paggination-point:hover {
   border: 2px solid #d3c1ad;
   background-color: #ffffff00;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 @media screen and (max-width: 1880px) {
@@ -302,6 +314,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .header {
+    background-size: auto 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
