@@ -31,6 +31,8 @@ $width: 1920px
 body
     max-width: $width
     margin: 0 auto
+.padding-side
+    padding: 0 340px
 .header
     background-color: #555556
     background-image: url('../img/landscape-1.jpg')
@@ -138,10 +140,13 @@ body
             color: #ffffff
             border-color: #998675 
             outline: none
+            position: relative
         button:hover
             background-color: #817264
         button:active
             box-shadow: 0 0 0 #736357
+            top: 6px 
+            left: 6px
     .arrow-right
         grid-column: span 4
         justify-self: center
@@ -156,6 +161,7 @@ body
     a
         text-decoration: none
     .header-paggination-point
+        display: block
         margin: 0 10px 40px 0
         width: 11px
         height: 11px
@@ -167,6 +173,50 @@ body
         border: 2px solid #d3c1ad
         background-color: #ffffff00
         transform: scale(1.5)
+.cards
+    display: flex
+    justify-content: start
+    margin: 80px 0 0 26px
+.card-content
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    box-sizing: border-box
+    text-decoration: none
+    width: 267px
+    margin: 0 20px 0 13px
+.card-content:after
+    content: ""
+    display: block
+    width: 70px
+    height: 3px
+    background-color: #ffffff
+    margin-top: 10px
+.card-content:hover
+    .card-icon
+        fill: #c7b299
+    .card-title
+        color: #c7b299
+.card-content:hover:after
+    background-color: #c7b299
+    
+.card-icon
+    display: block
+.card-title
+    width: 100%
+    text-align: center
+    color: #555555
+    font-family: "Raleway"
+    font-size: 22px
+    font-weight: 400
+    margin: 25px 0 0 0
+.card-txt
+    text-align: center
+    color: #8c8c8c
+    font-family: "Montserrat"
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
 
 
 @media screen and ( max-width: 1880px )
@@ -175,6 +225,11 @@ body
         margin: 40px 0 0 200px
     .header-top-menu
         grid-column: span 12  
+    .cards
+        padding: 0
+        flex-wrap: wrap
+        justify-content: center
+        margin: 80px 0 0 0
 @media screen and ( max-width: 1560px )
     .header-top-logo
         grid-column: span 6
