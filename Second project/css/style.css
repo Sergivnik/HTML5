@@ -322,6 +322,8 @@ body {
 
 .card-icon {
   display: block;
+  -webkit-transition: fill 1.5s;
+  transition: fill 1.5s;
 }
 
 .card-title {
@@ -341,6 +343,89 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.ideas {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin-top: 158px;
+}
+
+.ideas-title {
+  margin: 0 0 17px 17px;
+  color: #555555;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ideas-desribtion {
+  margin: 0 auto 32px auto;
+  padding-left: 25px;
+  width: 769px;
+  text-align: center;
+  color: #8c8c8c;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 28px;
+}
+
+.ideas-pic {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.ideas-center {
+  margin: 0 auto;
+  padding-left: 15px;
+  z-index: 2;
+  width: 770px;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.ideas-left {
+  position: absolute;
+  bottom: 0;
+  left: 345px;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.ideas-right {
+  position: absolute;
+  top: 80px;
+  right: 330px;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.ideas-left:hover {
+  z-index: 3;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.ideas-right:hover {
+  z-index: 3;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 @media screen and (max-width: 1880px) {
@@ -377,6 +462,12 @@ body {
   .header-top-menu-list {
     padding: 0;
   }
+  .ideas-left {
+    left: 145px;
+  }
+  .ideas-right {
+    right: 130px;
+  }
 }
 
 @media screen and (max-width: 1145px) {
@@ -404,6 +495,18 @@ body {
   }
   .header {
     background-size: auto 100%;
+  }
+  .ideas-left {
+    left: 0;
+  }
+  .ideas-right {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: width 900px) {
+  .ideas-center {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
