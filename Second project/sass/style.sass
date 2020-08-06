@@ -785,6 +785,7 @@ body
     background-image: url("../img/photo-rocks.jpg")
     background-repeat: no-repeat
     background-position: center
+    background-size: cover
     display: grid
     grid-template-columns: repeat(12,1fr)
     padding: 140px 346px 135px 371px
@@ -808,6 +809,8 @@ body
         margin: 80px 0 0 0
     .projects
         margin: 74px 270px 80px 281px
+    .partners
+        padding: 140px 200px 135px 200px
 @media screen and ( max-width: 1560px )
     .header-top-logo
         grid-column: span 6
@@ -831,10 +834,12 @@ body
         margin: 74px 170px 80px 181px
     .mobile
         margin: 79px 0 0 126px
-    .mobile-content
-        width: 100% 
+    .posts-content   
+        padding: 0 10% 0 10%
     .counts
         padding: 69px 250px 53px 250px
+    .partners
+        padding: 140px 100px 135px 100px
 @media screen and ( max-width: 1145px )
     .header-top-logo
         grid-column: span 24
@@ -867,6 +872,8 @@ body
         margin: 79px 0 0 0
     .counts
         padding: 69px 50px 53px 50px
+    .partners
+        padding: 140px 0 135px 0
 @media screen and ( max-width: 900px)
     .ideas-center,.ideas-left,.ideas-right
         width: 75%
@@ -890,3 +897,8 @@ body
     .counts
         flex-wrap: wrap
         justify-content: center
+    .partners-link
+        grid-column: span 6
+@media screen and ( max-width: 500px)
+    .partners-link
+        grid-column: span 12

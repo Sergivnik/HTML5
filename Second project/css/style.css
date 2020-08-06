@@ -1281,6 +1281,7 @@ body {
   background-image: url("../img/photo-rocks.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
@@ -1321,6 +1322,9 @@ body {
   .projects {
     margin: 74px 270px 80px 281px;
   }
+  .partners {
+    padding: 140px 200px 135px 200px;
+  }
 }
 
 @media screen and (max-width: 1560px) {
@@ -1356,11 +1360,14 @@ body {
   .mobile {
     margin: 79px 0 0 126px;
   }
-  .mobile-content {
-    width: 100%;
+  .posts-content {
+    padding: 0 10% 0 10%;
   }
   .counts {
     padding: 69px 250px 53px 250px;
+  }
+  .partners {
+    padding: 140px 100px 135px 100px;
   }
 }
 
@@ -1414,6 +1421,9 @@ body {
   .counts {
     padding: 69px 50px 53px 50px;
   }
+  .partners {
+    padding: 140px 0 135px 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1454,6 +1464,15 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .partners-link {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .partners-link {
+    grid-column: span 12;
   }
 }
 /*# sourceMappingURL=style.css.map */
