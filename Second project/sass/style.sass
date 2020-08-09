@@ -57,9 +57,9 @@ body
         span
             vertical-align: 15px
             margin-left: -5px
-    .logo
-        fill: #ffffff
-        transition: fill 1s
+.logo
+    fill: #ffffff
+    transition: fill 1s
 .header-top-logo-a:hover
     color: #c7b299
     .logo
@@ -67,6 +67,8 @@ body
 .header-top-menu
     grid-column: span 10
     margin: 0px 2px 0 86px
+.header-top-menu-none
+    
 .header-top-menu-list
     display: flex
     justify-content: space-around
@@ -85,6 +87,8 @@ body
         transition: color 1s
     a:hover 
         color: #c7b299
+    li:active
+        transform: scale(1.2)
 .header-top-twoicon
     grid-column: span 6
     display: flex
@@ -96,6 +100,20 @@ body
         margin-left: 30px
     .case:hover, .search:hover
         fill: #c7b299
+    .case:active, .search:active
+        transform: scale(1.2)
+.header-top-mobile-menu
+    display: none
+    grid-column: span 2
+    justify-self: flex-end
+    grid-column-start: 23
+    width: 50px
+    height: 50px
+    margin: 20px
+    .strip
+        height: 10px
+        margin-bottom: 10px
+        background-color: #ffffff
 .header-carousel
     display: grid
     grid-template-columns: repeat(24,1fr)
@@ -269,8 +287,6 @@ body
     animation: animation-2 1s 3 linear
 .card-icon-3:hover
     animation: animation-3 1s infinite linear
-    
-
 .card-title
     width: 100%
     text-align: center
@@ -795,7 +811,187 @@ body
     grid-column: span 3
 .partners-link:hover
     filter: brightness(.5)
+.footer-top
+    display: grid
+    grid-template-columns: repeat(12,1fr)
+    grid-column-gap: 17px
+    padding: 78px 347px 0 375px
+    background-color: #191919
+.waxom
+    grid-column: span 3
+    margin: 0 0 0 0
+.footer-top-logo
+    margin: 0 0 0 0
+.footer-top-logo-link
+    color: #ffffff
+    font-family: "Raleway"
+    font-size: 34px
+    font-weight: 400
+    letter-spacing: -1.36px   
+    text-decoration: none 
+    transition: color 1s
+    span
+        vertical-align: 15px
+        margin-left: -5px
+.footer-top-logo-link:hover
+    color: #c7b299
+    .logo
+        fill: #c7b299
+.footer-top-logo:active
+    transform: scale(1.1)
+.footer-top-waxom-content
+    color: #555555
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+.footer-top-waxom-link
+    color: #d1d1d1
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+    text-decoration: none
+    position: relative
+.footer-top-waxom-link:after
+    content: ''
+    position: absolute
+    left: 84px
+    bottom: 4px
+    border: 5px solid transparent
+    border-left: 5px solid #ffffff 
+.footer-posts
+    grid-column: span 3
+    margin: 23px 0 0 0
+.footer-posts-title
+    margin: 0 0 0 0
+    color: #ffffff
+    font-family: Raleway
+    font-size: 24px
+    font-weight: 700
+.footer-posts-link
+    display: block
+    margin: 20px 0 11px 0
+    text-decoration: none
+.footer-posts-time
+    margin: 0 0 0 0
+    color: #363636
+    font-family: Montserrat
+    font-size: 12px
+    font-weight: 300
+    line-height: 20px
+.footer-posts-content
+    margin: 0 0 0 0
+    color: #555555
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 300
+    line-height: 20px
+.footer-posts-link:hover
+    .footer-posts-time
+        color: #ffffff
+    .footer-posts-content
+        color: #c7b299
+.footer-twitter
+    grid-column: span 3
+    margin: 23px 0 0 0
+.footer-twitter-title
+    margin: 0px 0 20px 0
+    color: #ffffff
+    font-family: Raleway
+    font-size: 24px
+    font-weight: 700
+.footer-twitter-link
+    display: block
+    margin: 0 0 12px 0
+    text-decoration: none
+.footer-twitter-content
+    margin: 0 0 0 0
+    color: #555555
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 300
+    line-height: 20px
+.firstsSpan
+    color: #00bff3
+.lastSpan
+    color: #959595
+.footer-posts-time
+    margin: 0 0 0 0
+    color: #363636
+    font-family: Montserrat
+    font-size: 12px
+    font-weight: 300
+    line-height: 20px
+.footer-twitter-link:hover
+    .footer-twitter-content
+        color: #c7b299
+.footer-widget
+    grid-column: span 3
+    margin: 23px 0 0 0
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    grid-column-gap: 10px
+.footer-widget-title
+    grid-column: span 2
+    margin: 0 0 -8px 0
+    width: 100%
+    color: #ffffff
+    font-family: Raleway
+    font-size: 24px
+    font-weight: 700
+.footer-widget-link
+    margin: -68px 0 -26px 6px
+    img
+        transition: transform 1s
+.footer-widget-link:hover
+    img
+        transform: scale(1.3)
+.footer-bottom
+    display: flex
+    justify-content: space-between
+    background-color: #111111
+    padding: 108px 19% 49px 20%
+    font-family: Montserrat
+    font-size: 13px
+    font-weight: 300
+    line-height: 20px
+.footer-bottom-left
+    display: flex
+    justify-content: space-between
+    width: 400px
+    a
+        text-decoration: none
+        color: #555555
+    a:hover
+        color: #c7b299
+.footer-bottom-right
+    display: flex
+    justify-content: space-between
+    width: 320px
+    a
+        text-decoration: none
+        color: #555555
+        span
+            color: #959595
+    a:nth-child(1)
+        border-right: 1px solid #252525
+        padding-right: 13px
+    a:hover
+        color: #c7b299
         
+.footer-bottom-left > a:nth-child(1) > span
+    color: #959595
+    border-right: 1px solid #252525
+    padding-right: 13px
+.footer-bottom-left > a:nth-child(3)
+    border-left: 1px solid #252525
+    border-right: 1px solid #252525
+    padding: 0 10px 0 10px
+
+
+
+    
 @media screen and ( max-width: 1880px )
     .header-top-logo
         grid-column: span 6
@@ -811,6 +1007,8 @@ body
         margin: 74px 270px 80px 281px
     .partners
         padding: 140px 200px 135px 200px
+    .footer-top
+        padding: 78px 200px 0 200px
 @media screen and ( max-width: 1560px )
     .header-top-logo
         grid-column: span 6
@@ -840,7 +1038,9 @@ body
         padding: 69px 250px 53px 250px
     .partners
         padding: 140px 100px 135px 100px
-@media screen and ( max-width: 1145px )
+    .footer-top
+        padding: 78px 0 0 0
+@media screen and ( max-width: 1200px )
     .header-top-logo
         grid-column: span 24
         justify-self: center
@@ -874,6 +1074,12 @@ body
         padding: 69px 50px 53px 50px
     .partners
         padding: 140px 0 135px 0
+    .footer-top
+        padding: 78px 150px 0 150px
+    .waxom,.footer-posts,.footer-twitter,.footer-widget
+        grid-column: span 6
+    .footer-bottom
+        padding: 108px 3% 49px 3%
 @media screen and ( max-width: 900px)
     .ideas-center,.ideas-left,.ideas-right
         width: 75%
@@ -899,6 +1105,43 @@ body
         justify-content: center
     .partners-link
         grid-column: span 6
+        margin-bottom: 30px
+    .footer-bottom
+        flex-wrap: wrap
+        justify-content: center
+@media screen and ( max-width: 640px)
+    .header
+        background-size: auto
+    .header-top-logo
+        grid-column: span 12
+        justify-self: center
+        margin: 0
+    .header-top-menu
+        display: none
+        grid-column: span 6
+    .header-top-menu-list
+        flex-direction: column
+    .header-top-mobile-menu
+        display: block
+    .card-content
+        width: 200px
+    .projects-card
+        grid-column: span 12
+        width: 300px
+        justify-self: center
+    .projects-card-pic
+        width: 100%
+    .header-top-twoicon,
+    .header-carousel,
+    .header-paggination,
+    .ideas,    
+    .purcase,
+    .footer-top
+        display: none
+
 @media screen and ( max-width: 500px)
     .partners-link
         grid-column: span 12
+@media screen and ( min-width: 640px)
+    .header-top-menu
+        display: block !important
